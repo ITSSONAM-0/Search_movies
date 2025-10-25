@@ -10,7 +10,7 @@
 body{
     background: linear-gradient(135deg, #43c6ac, #191654);
 }
-/*Navbar*/
+
 nav{
     background: #232f3e;
     color: #fff;
@@ -57,7 +57,7 @@ p img{
     border-radius: 50%;
     margin-right: 5px;
 }
-/*Min section*/
+
 main{
     max-width: 1200px;
     margin: 0 auto;
@@ -127,7 +127,7 @@ main section{
 }
 
 
-/* Dark Mode Styles */
+
 body.dark-mode {
     background: linear-gradient(135deg, #0f2027, #2c5364, #000000);
     color: #e0e0e0;
@@ -167,7 +167,6 @@ footer.dark-mode {
 }
 
 
-/*footer*/
 
 footer{
     text-align: center;
@@ -185,7 +184,7 @@ footer p{
     gap: 5px;
 }
 
-/*Responsive Code*/
+
 @media screen and (max-width:950px){
     .movie-conatiner{
         flex-direction: column;
