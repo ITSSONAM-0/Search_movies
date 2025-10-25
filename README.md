@@ -11,14 +11,4 @@ Features :<br>
 → Responsive design.<br>
 
 
-<br>
-<b>ScreenShots</b><br>
 
-Dark Mode
-<br>
-
-<br><br>
-Light Mode
-
-<br><br>
-Sample
