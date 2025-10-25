@@ -20,11 +20,10 @@ const getMovieInfo = async (movie) => {
    }
 }
 
-//Function to show data on screen
 const showMovieData = (data) => {
     movieContainer.innerHTML = "";
     movieContainer.classList.remove('noBackground');
-    // used destructuring assignment to extract properties from data object 
+   
     const {Title, imdbRating, Genre, Released, Runtime, Actors, Plot, Poster} = data;
 
    const movieElement = document.createElement('div');
@@ -50,7 +49,6 @@ const showMovieData = (data) => {
     <p><strong>Cast: </strong>${Actors}</p>
     <p><strong>Plot: </strong>${Plot}</p>`;
 
-    //creating a div for movie poster
     const moviePosterElement = document.createElement('div');
     moviePosterElement.classList.add('movie-poster');
     moviePosterElement.innerHTML = `<img src="${Poster}">`;
@@ -58,12 +56,12 @@ const showMovieData = (data) => {
     movieContainer.appendChild(moviePosterElement);
     movieContainer.appendChild(movieElement);
 }
-//function to display error message
+
 const showErrorMessage = (message) => {
     movieContainer.innerHTML = `<h2>${message}</h2>`;
     movieContainer.classList.add('noBackground');
 }
-//Function to handle the from submission
+
 const handleFormSubmit = (e) => {
      e.preventDefault();
     const movieName = inputBox.value.trim();
@@ -74,10 +72,10 @@ const handleFormSubmit = (e) => {
        showErrorMessage("Enter movie name to get movie details.");
     }
 }
-// Adding event listener to search form
+
 searchForm.addEventListener('submit', handleFormSubmit);
 
-// Trigger search when Enter is pressed in input
+
 inputBox.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault();
@@ -86,7 +84,7 @@ inputBox.addEventListener('keydown', (e) => {
 });
 
 
-// Dark Mode Toggle
+
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
